@@ -1,0 +1,15 @@
+<p>restaurant-list works!</p>
+
+<div class="row">
+    <div class="col-md-3" *ngFor="let p of restaurants | async" >
+  
+      <div class="card" (click)="gotoRestaurant(p.id)">
+        <img src="assets/images/res.jpg" class="card-img-top" alt="{{p.name}}"> 
+        <div class="card-body">
+          <h6 class="card-title">{{p.name}}</h6>
+        </div>
+      </div>
+  
+    </div>
+  </div>
+  
